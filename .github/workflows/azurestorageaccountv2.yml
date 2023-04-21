@@ -26,7 +26,7 @@ jobs:
             az cache purge
             az account clear
             
-create-storage-account:
+  create-storage-account:
    needs: main-login-and-remove-lock
    runs-on: ubuntu-latest
    steps:
@@ -53,7 +53,7 @@ create-storage-account:
             az cache purge
             az account clear
           
-main-login-and-enable-lock:
+  main-login-and-enable-lock:
     needs: create-storage-account
     runs-on: ubuntu-latest
     steps:
