@@ -52,9 +52,8 @@ create-storage-account:
             az logout
             az cache purge
             az account clear
-            
           
- main-login-and-enable-lock:
+main-login-and-enable-lock:
     needs: create-storage-account
     runs-on: ubuntu-latest
     steps:
