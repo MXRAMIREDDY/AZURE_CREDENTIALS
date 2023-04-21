@@ -52,6 +52,8 @@ jobs:
             az logout
             az cache purge
             az account clear
+            
+          
  main-login-and-enable-lock:
     needs: create-storage-account
     runs-on: ubuntu-latest
